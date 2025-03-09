@@ -30,8 +30,8 @@ setup(
     test_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'helloworld_publisher=my_first_ros_rclpy_pkg.helloworld_publisher:main',
-            'helloworld_subscriber=my_first_ros_rclpy_pkg.helloworld_subscriber:main',
+            'helloworld_publisher = my_first_ros_rclpy_pkg.helloworld_publisher:main',
+            'helloworld_subscriber = my_first_ros_rclpy_pkg.helloworld_subscriber:main',
         ],
     },
 )
