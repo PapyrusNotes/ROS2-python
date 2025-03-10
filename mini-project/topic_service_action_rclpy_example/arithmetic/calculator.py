@@ -27,11 +27,6 @@ class Calculator(Node):
         self.declare_parameter('qos_depth', 10)
         qos_depth = self.get_parameter('qos_depth').value
 
-        """
-        Service server()
-        Action server()
-        """
-
         QOS_RKL10V = QoSProfile(
             reliability=QoSReliabilityPolicy.RELIABLE,
             history=QoSHistoryPolicy.KEEP_LAST,
@@ -58,6 +53,7 @@ class Calculator(Node):
             self,
             ArithmeticChecker,
             'arithmetic_checker',
+            self.execute_checker,
             callback_group=self.callback_group
         )
 
