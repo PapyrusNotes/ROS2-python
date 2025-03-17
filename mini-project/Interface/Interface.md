@@ -48,3 +48,6 @@ rosidl_default_generators가 사용된다.
 - 실행 시에 builtin_interfaces와 rosidl_default_runtime이 사용된다.
 
 ### 빌드 설정 파일 CMakeList.txt
+
+### 빌드하기 + alias 명령어
+cd ~/robot_ws
