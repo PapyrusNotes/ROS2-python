@@ -37,3 +37,15 @@ package.xml에 있는
 # 중요한 포인트?
 - 파이썬 코드의 파일 이름에 주의하여 작성하자.
 - 코드가 바뀐 후에는 환경설정 파일 노드 설정 해줘야함. (. ~/robot_ws/install/local_setup.bash) ? -> 확인 필요
+
+## 빌드 후
+~/robot_ws/install/msg_srv_action_interface_example 폴더 안에
+작성한 ROS 인터페이스를 사용하기 위한 파일들이 저장되어 있다.
+
+- C언어를 위한 .h(헤더 파일), C++를 위한 (.hpp) > include/msg_srv_action_interface_example
+- 파이썬 모듈 (.py)  > lib/python3.6/site-packages/msg_srv_action_interface_example
+- IDL 파일들 (.idl) > share/msg_srv_action_interface_example
+
+* python3.10 기준 파이썬 모듈이 빌드되는 경로
+python 3.10 기준으로는 lib/python3.6/site-packages가 아닌
+local/lib/python3.10/dist-packages임.
