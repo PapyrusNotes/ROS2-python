@@ -1,4 +1,4 @@
-# README
+# package building
 ## 소스 코드 다운
 이 프로젝트 폴더(topic_service_action_rclpy_example)의
 package.xml, setup.py는 
@@ -50,3 +50,9 @@ ros2 run topic_service_action_rclpy_example checker
 argument 노드와 calculator 노드를 한 꺼번에 실행하려면
 arithmetic.launch.py을 실행한다.
 ros2 launch topic_service_action_rclpy_example arithmetic.launch.py
+
+# Topic programming
+Topic은 비동기식, 단뱡향 메시지 송수신 방식으로  
+메시지를 퍼블리시하는 퍼블리셔  
+메시지를 서브스크라이브하는 서브스크라이버 간 통신임.
+1:1, N:1, N:N 모두 가능
